@@ -13,6 +13,8 @@
 		22B3AB0E28E74C880063CCE1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22B3AB0C28E74C880063CCE1 /* Main.storyboard */; };
 		22B3AB1028E74C890063CCE1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 22B3AB0F28E74C890063CCE1 /* Assets.xcassets */; };
 		22B3AB1328E74C890063CCE1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22B3AB1128E74C890063CCE1 /* LaunchScreen.storyboard */; };
+		22B3AB1B28E74D500063CCE1 /* TTTBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22B3AB1A28E74D500063CCE1 /* TTTBox.swift */; };
+		22B3AB1D28E759480063CCE1 /* Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22B3AB1C28E759480063CCE1 /* Cell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		22B3AB0F28E74C890063CCE1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		22B3AB1228E74C890063CCE1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		22B3AB1428E74C890063CCE1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		22B3AB1A28E74D500063CCE1 /* TTTBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TTTBox.swift; sourceTree = "<group>"; };
+		22B3AB1C28E759480063CCE1 /* Cell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,6 +44,8 @@
 		22B3AAFA28E74C880063CCE1 = {
 			isa = PBXGroup;
 			children = (
+				22B3AB1C28E759480063CCE1 /* Cell.swift */,
+				22B3AB1A28E74D500063CCE1 /* TTTBox.swift */,
 				22B3AB0528E74C880063CCE1 /* IP05_TicTacToe */,
 				22B3AB0428E74C880063CCE1 /* Products */,
 			);
@@ -138,7 +144,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				22B3AB1B28E74D500063CCE1 /* TTTBox.swift in Sources */,
 				22B3AB0B28E74C880063CCE1 /* ViewController.swift in Sources */,
+				22B3AB1D28E759480063CCE1 /* Cell.swift in Sources */,
 				22B3AB0728E74C880063CCE1 /* AppDelegate.swift in Sources */,
 				22B3AB0928E74C880063CCE1 /* SceneDelegate.swift in Sources */,
 			);
