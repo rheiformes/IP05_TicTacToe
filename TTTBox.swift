@@ -17,7 +17,7 @@ class TTTBox{
      
      values.count = 9
      */
-    var cells: [Cell]
+    var cells: [Cell] = []
     
     
     let sideLength: Int
@@ -29,30 +29,22 @@ class TTTBox{
         self.sideLength = 0
         self.boxLeftX = 0
         self.boxTopY = 0
+
         for i in 0...8 {
-            cells[i] = Cell(index: i)
+            cells.insert(Cell(index: i, boxSideLength: sideLength, boxXLeft: boxLeftX, boxYTop: boxTopY), at: i)
         }
     }
-    
+
     init(sideLength: Int, boxLeftX: Int, boxTopY: Int) {
         self.sideLength = sideLength
         self.boxLeftX = boxLeftX
         self.boxTopY = boxTopY
         for i in 0...8 {
-            cells[i] = Cell(index: i)
+            cells.insert(Cell(index: i, boxSideLength: sideLength, boxXLeft: boxLeftX, boxYTop: boxTopY), at:i)
+
         }
+        //print(cells.count)
     }
-    
-    
-//    func getCellTopLeftCoord(index: Int) -> (Int,Int) {
-//        if(index >= cells.count || index < 0) {
-//            print("WRONG INDEXES, CHECK TTTBOX FILE TO DEBUG")
-//            return (0,0)
-//        }
-//        let x = (index%3) * (sideLength/3) + boxLeftX
-//        let y = (index/3) * (sideLength/3) + boxTopY
-//        return (x,y)
-//    }
     
     
     
